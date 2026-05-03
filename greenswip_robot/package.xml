@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+            schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>greenswip_robot</name>
+  <version>1.0.0</version>
+  <description>
+    Greenswip Robotics Intern Assignment:
+    Perception-to-Action pipeline for an Ackermann mobile robot in Gazebo Ignition.
+  </description>
+  <maintainer email="candidate@example.com">Candidate</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- ROS 2 core -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- Ackermann messages -->
+  <depend>ackermann_msgs</depend>
+
+  <!-- Vision -->
+  <depend>cv_bridge</depend>
+  <!-- opencv-python installed via pip; cv_bridge brings libopencv -->
+
+  <!-- Simulation -->
+  <depend>ros_gz_sim</depend>
+  <depend>ros_gz_bridge</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+
+  <!-- Launch -->
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
