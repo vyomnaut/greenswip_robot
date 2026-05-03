@@ -9,8 +9,8 @@ Complete ROS 2 perception-to-action pipeline for an Ackermann-steered mobile rob
 
 ## Dependencies
 ```bash
-sudo apt install ros-<distro>-ros-gz ros-<distro>-ros-gz-bridge \
-    ros-<distro>-ackermann-msgs ros-<distro>-cv-bridge python3-opencv
+sudo apt install ros-humble-ros-gz ros-humble-ros-gz-bridge \
+    ros-<humble>-ackermann-msgs ros-<humble>-cv-bridge python3-opencv
 ```
 
 ## Build & Run
