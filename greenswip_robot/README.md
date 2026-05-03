@@ -20,10 +20,11 @@ colcon build --symlink-install
 source install/setup.bash
 
 # Launch simulation + all nodes
-ros2 launch greenswip_robot greenswip_sim.launch.py
-
-# With OpenCV debug window
+cd ~/ros2_ws && colcon build --packages-select greenswip_robot && source install/setup.bash
 ros2 launch greenswip_robot greenswip_sim.launch.py debug_vision:=true
+
+an then 
+ros2 run greenswip_robot control_node.py
 
 
 ```
