@@ -25,8 +25,7 @@ ros2 launch greenswip_robot greenswip_sim.launch.py
 # With OpenCV debug window
 ros2 launch greenswip_robot greenswip_sim.launch.py debug_vision:=true
 
-# Robustness test: shuffle objects (run in second terminal while sim is live)
-ros2 launch greenswip_robot shuffle_objects.launch.py arrangement:=2
+
 ```
 
 ## Topic Map
